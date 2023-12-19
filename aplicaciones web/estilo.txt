@@ -1,0 +1,106 @@
+@font-face {
+    font-family: graffiti1;
+    src: url(Fuentes/aAnotherTag.otf);
+  }
+  @font-face {
+    font-family: graffiti2;
+    src: url(Fuentes/aAnotherTag.ttf);
+  }
+  @font-face {
+    font-family: graffiti3;
+    src: url(Fuentes/UrbanCalligraphy.ttf);
+  }
+/*
+Esto es un comentario
+*/
+/*
+Selector{
+    propiedad:valor;
+    propiedad:valor;
+    propiedad:valor;
+    ... 
+}
+
+*/ 
+/* /////////////// ESTILOS GENERALES //////////// */
+p{
+    color: rgb(30, 30, 30);
+}
+h1, h2, h3, h4, h5. h6, p, ul, li{
+    color: rgb(30, 30, 30);
+    margin: 0px;
+    padding: 0px;
+}
+/*
+    palabra suelta > etiqueta
+    almohadilla > id    
+    punto (.) > clase
+    */
+header, main, footer{
+    
+    width: 800px;
+    margin: auto;
+    background:rgb(240, 240, 240);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+
+body{
+    background:rgb(200, 200, 200) ; 
+    font-family: sans-serif;
+}
+/* /////////////// ESTILOS GENERALES //////////// */
+/* /////////////// ESTILOS CABECERA //////////// */
+
+#imagenlogo{
+    float: left;
+    margin-right: 20px;
+}
+h1{font-family:graffiti3 ;
+    font-size: 40px;
+}
+h2{font-family:graffiti2 ;
+    font-size: 30px;
+}
+
+
+/* /////////////// ESTILOS CABECERA //////////// */
+        /* /////////////// AQUI VOY A TRABAJAR CON EL MENU //////////// */
+        nav ul li a{
+            text-decoration: none;
+            color: inherit;
+        }
+        nav ul{
+            padding: 0px;
+            margin: 0px;
+        }
+        nav ul li{
+            padding: 5px;
+            margin: 1px;
+            list-style-type: none;
+            float: left;
+            background:black ;
+            color: white;
+            text-transform: uppercase;
+            width: 70px;
+            font-size: 10px;
+            text-align: center;
+            transition:all 1s;
+
+        }
+        .clearfix{
+            clear:both;
+        }
+        nav ul li:first-child{
+            border-radius: 15px 0px 0px 15px;
+            /*  esquinas   1    2    3   4 */
+        }
+        nav ul li:last-child{
+            border-radius: 0px 15px 15px 0px;
+        }
+        nav ul li:hover{
+            background: white;
+            color: black;
+        }
+        /* ////////////// AQUI VOY A TRABAJAR CON EL MENU //////////// */

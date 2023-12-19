@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <style>
+            .dia{width:100px;height:100px;border: 1px solid gray;float: left;} 
+        </style>
+    </head>
+    <body>
+        <div id="calendario">
+           
+        </div>
+        <script>
+
+            //Esto es una funcion que me he copiado de internet para averiguar los dias del mes que tiene un año    
+            var getDaysInMonth = function(month,year){
+                return new Date(year, month, 0).getDate();
+            };  
+
+            //Recorro los años desde el 2020 hasta el 2022
+            for(var anio = 2020;anio <=2022;anio++){
+                document.write("<div style='clear:both;'></div>")
+                document.write("<h1>Este es el año "+anio+" del año</h1><br>")   
+
+                for(var mes = 1;mes <=12;mes++){
+                    document.write("<div style='clear:both;'></div>")
+                    document.write("<h1>Este es el mes "+mes+" del año</h1><br>")
+
+                    var cuentadia = 1;
+                    var date = new Date(), y = anio, m = mes-1;
+                    var firstDay = new Date(y, m, 1);
+                    for(var diasenblanco = 1;diasenblanco < firstDay.getDay();diasenblanco++){ 
+                        document.write("<div class='dia'></div>")
+                        cuentadia++;
+                    }
+                    
+                    for(var dia = 1;dia<=30;dia++){
+                        document.write("<div class='dia'>"+ dia+"</div>")
+                        if(cuentadia%7 == 0) {
+                        document.write("<div style='clear:both;'></div>")
+                }
+                        cuentadia++;
+            }
+        }
+    }
+ 
+        </script>
+    </body>
+</html>
